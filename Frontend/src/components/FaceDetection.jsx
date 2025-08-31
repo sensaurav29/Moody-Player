@@ -49,7 +49,7 @@ const FaceDetection = ({ setsongs }) => {
     }
 
     axios
-      .get(`https://moody-player-pyqa.onrender.com//songs?mood=${detectedExpression}`)
+      .get(`https://moody-player-pyqa.onrender.com/songs?mood=${detectedExpression}`)
       .then((res) => {
         console.log(res.data);
         setsongs(res.data.songs);
